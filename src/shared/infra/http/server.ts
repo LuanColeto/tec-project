@@ -8,6 +8,7 @@ import 'express-async-errors';
 
 import '@shared/infra/typeorm';
 import AppError from '@shared/errors/AppError';
+import routes from './routes';
 
 import '@shared/container';
 
@@ -15,6 +16,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use(routes);
 
 app.use(errors());
 
