@@ -1,0 +1,11 @@
+.idea
+node_modules/
+build/
+tep/
+.env
+coverage
+
+ormconfig.json
+
+tmp/*
+!tmp/.gitkeep
